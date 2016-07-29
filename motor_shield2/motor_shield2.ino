@@ -1,3 +1,8 @@
+
+
+//reference : http://www.arduinoecia.com.br/2014/07/motor-de-passo-28byj-48-motor-shield.html
+
+
 #include <AFMotor.h>
 
 #include <Servo.h> 
