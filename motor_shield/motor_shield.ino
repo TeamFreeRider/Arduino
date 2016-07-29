@@ -33,7 +33,7 @@ void setup() {
   
 
   // turn on servo
-
+// have to initialize step!!
   servo1.attach(9);
   }
 
@@ -53,7 +53,7 @@ void loop() {
 
     servo1.write(i);
 
-    stepper.step(2048, FORWARD, INTERLEAVE);
+    stepper.step(1, FORWARD, INTERLEAVE);
 
     delay(3);
 
@@ -65,7 +65,7 @@ void loop() {
 
     servo1.write(i-255);
     
-    stepper.step(2048, BACKWARD, INTERLEAVE);
+    stepper.step(1, BACKWARD, INTERLEAVE);
 
     delay(3);
 
