@@ -55,12 +55,12 @@ void loop(){
   switch (direction) {
 
     case 'E' ://stop
-      digitalWrite(motor2APin, LOW);
+      digitalWrite(motor2APin, LOW); break;
 
     case 'F' :// go straight foward
       digitalWrite(motor2APin, HIGH);
       myservo.write(90);
-      delay(100);
+      delay(100); break;
 
     case 'R' : // turn right
       digitalWrite(motor2APin, HIGH);
@@ -70,7 +70,7 @@ void loop(){
     case 'L' :// turn left
       digitalWrite(motor2APin, HIGH);
       myservo.write(55);
-      delay(100);
+      delay(100); 
 
   }
 
